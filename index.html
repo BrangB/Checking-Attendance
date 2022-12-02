@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Attendance</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2287ebfac7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/brand-removebg-preview.png" type = "image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <i class="fa-brands fa-buromobelexperte"></i>
+            <h3>Attendance</h3>
+        </nav>
+        <div class="filterContainer">
+            <div class="navigation">
+                <div class="check active">Attendance</div>
+                <div class="studentList">List</div>
+            </div>
+            <div class="refresh">
+                Refresh
+                <i class="fa-solid fa-rotate"></i>
+            </div>
+        </div>
+        <div class="studentContainer">
+        </div>
+        <div class="submitBtn">
+            <button class="submit">Submit</button>
+        </div>
+        <div class="modalContainer">
+            <div class="modal">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="modalContent">
+                    <p>Thank You for using this app</p>
+                    <img src="./img//Smiling_Face_Emoji-removebg-preview.png" alt="emoji">
+                </div>
+                <div class="modalBtns">
+                </div>
+            </div>
+        </div>
+        <div class="addStudent">
+            <div class="box">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <label>Email (to receive the result)</label>
+                <input type="email" class="emailInput" placeholder="Enter your email...">
+                <label>Add Name</label>
+                <input type="text" class="addName" placeholder="Add name">
+                <button class="addStudentBtn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+</body>
+</html>
